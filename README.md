@@ -22,7 +22,7 @@
 * Симпатичный UI 
 * Обработка исключений и нестандартных ситуаций 
 
-## Выполнено
+## Выполнено ✅
 - MVC
 - No storyboard
 - Well-written application code
