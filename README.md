@@ -2,7 +2,7 @@
 
 ## A test app to play audio files from your device with crossfade effect
 
-##ТЕСТОВОЕ ЗАДАНИЕ:
+## ТЕСТОВОЕ ЗАДАНИЕ:
  
 Требуется разработать небольшое приложение на Swift по проигрыванию аудиофайлов с кросс-фейдом 
  
