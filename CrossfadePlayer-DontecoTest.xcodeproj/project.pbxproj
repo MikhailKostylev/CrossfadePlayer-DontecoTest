@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F5AFF4D284D416700EF9F67 /* track1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F5AFF4C284D416700EF9F67 /* track1.mp3 */; };
+		1F5AFF4F284D416E00EF9F67 /* track2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F5AFF4E284D416E00EF9F67 /* track2.mp3 */; };
+		1FC3CFC1284CCF7800AC6868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3CFC0284CCF7800AC6868 /* AppDelegate.swift */; };
+		1FC3CFC3284CCF7800AC6868 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3CFC2284CCF7800AC6868 /* SceneDelegate.swift */; };
+		1FC3CFC5284CCF7800AC6868 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3CFC4284CCF7800AC6868 /* PlayerViewController.swift */; };
+		1FC3CFCA284CCF7900AC6868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC3CFC9284CCF7900AC6868 /* Assets.xcassets */; };
+		1FC3CFCD284CCF7900AC6868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC3CFCB284CCF7900AC6868 /* LaunchScreen.storyboard */; };
+		1FC3CFDA284CD14D00AC6868 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3CFD9284CD14D00AC6868 /* AudioPlayerManager.swift */; };
+		1FC3CFDC284CD16300AC6868 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3CFDB284CD16300AC6868 /* AudioPlayer.swift */; };
+		1FC3CFDF284CD1DB00AC6868 /* PlayerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3CFDE284CD1DB00AC6868 /* PlayerButton.swift */; };
+		1FC3CFE1284CD20100AC6868 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3CFE0284CD20100AC6868 /* PlayerView.swift */; };
+		1FC3CFE4284CD27A00AC6868 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3CFE3284CD27A00AC6868 /* Constants.swift */; };
+		1FC3CFE8284CD2D800AC6868 /* PlayerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3CFE7284CD2D800AC6868 /* PlayerError.swift */; };
+		1FC3CFEB284CDDD000AC6868 /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3CFEA284CDDD000AC6868 /* UIView+extensions.swift */; };
+		1FC3CFEF284CFAEC00AC6868 /* UIColor+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC3CFEE284CFAEC00AC6868 /* UIColor+extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F5AFF4C284D416700EF9F67 /* track1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = track1.mp3; sourceTree = "<group>"; };
+		1F5AFF4E284D416E00EF9F67 /* track2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = track2.mp3; sourceTree = "<group>"; };
+		1FC3CFBD284CCF7800AC6868 /* CrossfadePlayer-DontecoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CrossfadePlayer-DontecoTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC3CFC0284CCF7800AC6868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FC3CFC2284CCF7800AC6868 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1FC3CFC4284CCF7800AC6868 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		1FC3CFC9284CCF7900AC6868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FC3CFCC284CCF7900AC6868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FC3CFCE284CCF7900AC6868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC3CFD9284CD14D00AC6868 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		1FC3CFDB284CD16300AC6868 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		1FC3CFDE284CD1DB00AC6868 /* PlayerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerButton.swift; sourceTree = "<group>"; };
+		1FC3CFE0284CD20100AC6868 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		1FC3CFE3284CD27A00AC6868 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1FC3CFE7284CD2D800AC6868 /* PlayerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerError.swift; sourceTree = "<group>"; };
+		1FC3CFEA284CDDD000AC6868 /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
+		1FC3CFEE284CFAEC00AC6868 /* UIColor+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FC3CFBA284CCF7800AC6868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FC3CFB4284CCF7800AC6868 = {
+			isa = PBXGroup;
+			children = (
+				1FC3CFBF284CCF7800AC6868 /* CrossfadePlayer-DontecoTest */,
+				1FC3CFBE284CCF7800AC6868 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FC3CFBE284CCF7800AC6868 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3CFBD284CCF7800AC6868 /* CrossfadePlayer-DontecoTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FC3CFBF284CCF7800AC6868 /* CrossfadePlayer-DontecoTest */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3CFCE284CCF7900AC6868 /* Info.plist */,
+				1FC3CFD4284CD07800AC6868 /* App */,
+				1FC3CFD6284CD0B400AC6868 /* MainModule */,
+				1FC3CFE9284CDDAE00AC6868 /* Extensions */,
+				1FC3CFD5284CD07E00AC6868 /* Resources */,
+				1FC3CFE5284CD29F00AC6868 /* Utility */,
+			);
+			path = "CrossfadePlayer-DontecoTest";
+			sourceTree = "<group>";
+		};
+		1FC3CFD4284CD07800AC6868 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3CFC0284CCF7800AC6868 /* AppDelegate.swift */,
+				1FC3CFC2284CCF7800AC6868 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1FC3CFD5284CD07E00AC6868 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3CFC9284CCF7900AC6868 /* Assets.xcassets */,
+				1FC3CFCB284CCF7900AC6868 /* LaunchScreen.storyboard */,
+				1F5AFF4C284D416700EF9F67 /* track1.mp3 */,
+				1F5AFF4E284D416E00EF9F67 /* track2.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1FC3CFD6284CD0B400AC6868 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3CFD7284CD12D00AC6868 /* Model */,
+				1FC3CFDD284CD1A400AC6868 /* View */,
+				1FC3CFD8284CD13500AC6868 /* Controller */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		1FC3CFD7284CD12D00AC6868 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3CFD9284CD14D00AC6868 /* AudioPlayerManager.swift */,
+				1FC3CFDB284CD16300AC6868 /* AudioPlayer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1FC3CFD8284CD13500AC6868 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3CFC4284CCF7800AC6868 /* PlayerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1FC3CFDD284CD1A400AC6868 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3CFE0284CD20100AC6868 /* PlayerView.swift */,
+				1FC3CFDE284CD1DB00AC6868 /* PlayerButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1FC3CFE5284CD29F00AC6868 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3CFE3284CD27A00AC6868 /* Constants.swift */,
+				1FC3CFE7284CD2D800AC6868 /* PlayerError.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		1FC3CFE9284CDDAE00AC6868 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3CFEE284CFAEC00AC6868 /* UIColor+extensions.swift */,
+				1FC3CFEA284CDDD000AC6868 /* UIView+extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FC3CFBC284CCF7800AC6868 /* CrossfadePlayer-DontecoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC3CFD1284CCF7900AC6868 /* Build configuration list for PBXNativeTarget "CrossfadePlayer-DontecoTest" */;
+			buildPhases = (
+				1FC3CFB9284CCF7800AC6868 /* Sources */,
+				1FC3CFBA284CCF7800AC6868 /* Frameworks */,
+				1FC3CFBB284CCF7800AC6868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CrossfadePlayer-DontecoTest";
+			productName = "CrossfadePlayer-DontecoTest";
+			productReference = 1FC3CFBD284CCF7800AC6868 /* CrossfadePlayer-DontecoTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FC3CFB5284CCF7800AC6868 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					1FC3CFBC284CCF7800AC6868 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 1FC3CFB8284CCF7800AC6868 /* Build configuration list for PBXProject "CrossfadePlayer-DontecoTest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FC3CFB4284CCF7800AC6868;
+			productRefGroup = 1FC3CFBE284CCF7800AC6868 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FC3CFBC284CCF7800AC6868 /* CrossfadePlayer-DontecoTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FC3CFBB284CCF7800AC6868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5AFF4F284D416E00EF9F67 /* track2.mp3 in Resources */,
+				1FC3CFCD284CCF7900AC6868 /* LaunchScreen.storyboard in Resources */,
+				1FC3CFCA284CCF7900AC6868 /* Assets.xcassets in Resources */,
+				1F5AFF4D284D416700EF9F67 /* track1.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FC3CFB9284CCF7800AC6868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC3CFC5284CCF7800AC6868 /* PlayerViewController.swift in Sources */,
+				1FC3CFE1284CD20100AC6868 /* PlayerView.swift in Sources */,
+				1FC3CFC1284CCF7800AC6868 /* AppDelegate.swift in Sources */,
+				1FC3CFEF284CFAEC00AC6868 /* UIColor+extensions.swift in Sources */,
+				1FC3CFDC284CD16300AC6868 /* AudioPlayer.swift in Sources */,
+				1FC3CFDA284CD14D00AC6868 /* AudioPlayerManager.swift in Sources */,
+				1FC3CFC3284CCF7800AC6868 /* SceneDelegate.swift in Sources */,
+				1FC3CFEB284CDDD000AC6868 /* UIView+extensions.swift in Sources */,
+				1FC3CFDF284CD1DB00AC6868 /* PlayerButton.swift in Sources */,
+				1FC3CFE8284CD2D800AC6868 /* PlayerError.swift in Sources */,
+				1FC3CFE4284CD27A00AC6868 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1FC3CFCB284CCF7900AC6868 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FC3CFCC284CCF7900AC6868 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FC3CFCF284CCF7900AC6868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FC3CFD0284CCF7900AC6868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FC3CFD2284CCF7900AC6868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RTJ9N9VRF5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CrossfadePlayer-DontecoTest/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikekos.CrossfadePlayer-DontecoTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1FC3CFD3284CCF7900AC6868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RTJ9N9VRF5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CrossfadePlayer-DontecoTest/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mikekos.CrossfadePlayer-DontecoTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FC3CFB8284CCF7800AC6868 /* Build configuration list for PBXProject "CrossfadePlayer-DontecoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC3CFCF284CCF7900AC6868 /* Debug */,
+				1FC3CFD0284CCF7900AC6868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FC3CFD1284CCF7900AC6868 /* Build configuration list for PBXNativeTarget "CrossfadePlayer-DontecoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC3CFD2284CCF7900AC6868 /* Debug */,
+				1FC3CFD3284CCF7900AC6868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FC3CFB5284CCF7800AC6868 /* Project object */;
+}
