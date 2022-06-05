@@ -77,6 +77,7 @@
 				1FC3CFCE284CCF7900AC6868 /* Info.plist */,
 				1FC3CFD4284CD07800AC6868 /* App */,
 				1FC3CFD6284CD0B400AC6868 /* MainModule */,
+				1FFBF7C9284D45C6001A8B72 /* PlayerManager */,
 				1FC3CFE9284CDDAE00AC6868 /* Extensions */,
 				1FC3CFD5284CD07E00AC6868 /* Resources */,
 				1FC3CFE5284CD29F00AC6868 /* Utility */,
@@ -117,7 +118,6 @@
 		1FC3CFD7284CD12D00AC6868 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1FC3CFD9284CD14D00AC6868 /* AudioPlayerManager.swift */,
 				1FC3CFDB284CD16300AC6868 /* AudioPlayer.swift */,
 			);
 			path = Model;
@@ -156,6 +156,14 @@
 				1FC3CFEA284CDDD000AC6868 /* UIView+extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1FFBF7C9284D45C6001A8B72 /* PlayerManager */ = {
+			isa = PBXGroup;
+			children = (
+				1FC3CFD9284CD14D00AC6868 /* AudioPlayerManager.swift */,
+			);
+			path = PlayerManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
